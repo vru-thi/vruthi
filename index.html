@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Personal Blog - Thoughts on AI, Finance & Life</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Your Blog</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Categories</a>
+                    <div class="dropdown-content">
+                        <a href="category.html?cat=ai">AI</a>
+                        <a href="category.html?cat=finance">Finance</a>
+                        <a href="category.html?cat=lifestyle">Lifestyle</a>
+                        <a href="category.html?cat=travel">Travel</a>
+                        <a href="category.html?cat=interviews">Interviews</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="search-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Fullscreen Navigation Overlay -->
+    <div class="nav-overlay" id="navOverlay">
+        <button class="nav-close" onclick="closeNavOverlay()">&times;</button>
+        <div class="nav-overlay-content">
+            <div class="nav-section">
+                <h3>Categories</h3>
+                <ul class="nav-links-list">
+                    <li><a href="category.html?cat=ai">Artificial Intelligence</a></li>
+                    <li><a href="category.html?cat=finance">Finance & Investment</a></li>
+                    <li><a href="category.html?cat=lifestyle">Lifestyle & Productivity</a></li>
+                    <li><a href="category.html?cat=travel">Travel & Adventure</a></li>
+                    <li><a href="category.html?cat=interviews">Interviews & Conversations</a></li>
+                </ul>
+            </div>
+            <div class="nav-section">
+                <h3>About</h3>
+                <ul class="nav-links-list">
+                    <li><a href="about.html">My Story</a></li>
+                    <li><a href="about.html#philosophy">Philosophy</a></li>
+                    <li><a href="contact.html">Get In Touch</a></li>
+                </ul>
+            </div>
+            <div class="nav-section">
+                <h3>Connect</h3>
+                <ul class="nav-links-list">
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Medium</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Hero Section with Abstract Background -->
+    <section class="hero-main">
+        <div class="abstract-background">
+            <!-- Abstract shapes -->
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+            <div class="shape shape-6"></div>
+            <div class="shape shape-7"></div>
+            <div class="shape shape-8"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-main-content">
+                <!-- Featured Article Card -->
+                <div class="featured-card">
+                    <div class="featured-badge">AI INSIGHTS</div>
+                    <h2 class="featured-title">The Future of AI in Personal Finance</h2>
+                    <p class="featured-excerpt">Here's how artificial intelligence is revolutionizing the way we manage money and make investment decisions.</p>
+                    <a href="post.html?id=1" class="featured-link">Read More →</a>
+                </div>
+                
+                <!-- Book/Article Showcase -->
+                <div class="showcase-item">
+                    <div class="book-cover">
+                        <div class="book-spine"></div>
+                        <div class="book-front">
+                            <div class="book-title-main">EVERYTHING IS<br>ARTIFICIAL<br>INTELLIGENCE</div>
+                            <div class="book-badge">Featured<br>Article</div>
+                            <div class="book-subtitle">THE FUTURE AND<br>PERSISTENCE OF<br>OUR SMARTEST<br>TECHNOLOGY</div>
+                            <div class="book-author">YOUR BLOG</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Play button for video/interactive content -->
+                <div class="play-button">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M8 5v14l11-7z"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section class="blog-grid">
+        <div class="container">
+            <div class="grid" id="blogGrid">
+                <!-- Blog posts will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p>&copy; 2024 Your Personal Blog. All rights reserved.</p>
+                </div>
+                <div class="footer-right">
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter">Twitter</a>
+                        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                        <a href="#" aria-label="Medium">Medium</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
