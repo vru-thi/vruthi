@@ -39,8 +39,8 @@ h3 {
 
 /* Navigation */
 .navbar {
-    background: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(80px);
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(20px);
     padding: 0;
     position: fixed;
     top: 24px;
